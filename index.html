@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz</h1>
+    </header>
+
+
+    <main>
+
+
+
+        <section id="topics" class="active">
+            <h2>Тақырып таңды</h2>
+            <div class="topic">
+                <button class="topic-btn" data-topic="history">
+                    <span class="topic-icon">🏛️</span>
+                    Тарих
+                </button>
+                <button class="topic-btn" data-topic="science">
+                    <span class="topic-icon">🔬</span>
+                    Ғылым
+                </button>
+                <button class="topic-btn" data-topic="movies">
+                    <span class="topic-icon">🎬</span>
+                    Кино
+                </button>
+                <button class="topic-btn" data-topic="sports">
+                    <span class="topic-icon">⚽</span>
+                    Спорт
+                </button>
+                <button class="topic-btn" data-topic="geography">
+                    <span class="topic-icon">🌍</span>
+                    География
+                </button>
+                <button class="topic-btn" data-topic="literature">
+                    <span class="topic-icon">📚</span>
+                    Әдебиет
+                </button>
+            </div>
+        </section>
+
+
+
+
+        <section id="quiz" class="hidden">
+            <div id="quiz-header">
+                <h2 id="quiz-topic"></h2>
+                <div id="progress">Сұрақ <span id="current-question">1</span> ден <span id="total-questions">10</span></div>
+            </div>
+            <div id="question-container">
+                <h3 id="question"></h3>
+                <div id="answers"></div>
+            </div>
+            <button id="next-btn" class="hidden">Келесі сұрақ</button>
+        </section>
+
+
+
+        <section id="results" class="hidden">
+            <h2>Куиз нәтижесі</h2>
+            <div class="result">
+                <div class="percent">0%</div>
+            </div>
+            <p>Сен <span id="total"></span> ұпайдан <span id="score"></span> жинадың</p>
+            <p id="feedback"></p>
+            <button id="restart-btn">Тағы да байқап көру</button>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+        <p>2024 Viktorina</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
